@@ -4,8 +4,9 @@
 }
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 14px;
+  font-family: 'Quicksand',
+    sans-serif;
+  font-size: 16px;
 }
 
 h1,
@@ -20,7 +21,7 @@ img {
 }
 
 nav {
-  background-color: #DBEBF4;
+  background-color: rgb(180, 180, 180);
   width: 100%;
   position: fixed;
   z-index: 1;
@@ -71,11 +72,20 @@ header {
   background-repeat: no-repeat;
 }
 
-h1 {
-  font-size: 65px;
-  line-height: 150%;
+
+h1,
+.hi {
+  font-family: 'Amatic SC',
+    cursive;
+  font-size: 100px;
+  line-height: 120%;
   padding-top: 70px;
   padding-bottom: 30px;
+  letter-spacing: .5rem;
+}
+
+.hi {
+  font-size: 60px;
 }
 
 h2 {
@@ -90,7 +100,7 @@ p {
 }
 
 .about {
-  padding-right: 10px;
+  padding-right: 15px;
 }
 
 .button {
@@ -104,7 +114,7 @@ p {
 }
 
 .button:hover {
-  background-color: #DBEBF4;
+  background-color: rgb(180, 180, 180);
   text-decoration: none;
   color: black;
   border: 1px solid grey;
@@ -120,7 +130,7 @@ figcaption {
   font-size: 10px;
   color: gray;
   padding-top: 10px;
-  text-align: right;
+  text-align: left;
 }
 
 .skills {
@@ -136,7 +146,8 @@ figcaption {
 }
 
 .blue {
-  background-color: #DBEBF4;
+  /* background-color: rgb(180, 180, 180); */
+  background-color: rgb(224, 224, 224);
 }
 
 footer {
@@ -152,4 +163,27 @@ footer p a {
 footer p a:hover {
   text-decoration: none;
   color: grey;
+}
+
+@media (max-width: 360px) {
+  * {
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  nav {
+    font-size: 10px;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .hi {
+    font-size: 30px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
 }
